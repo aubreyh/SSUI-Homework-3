@@ -1,10 +1,10 @@
 
 body{
-  text-align: center;
-  width: 40%;
+  /*text-align: center;*/
+  width: 80%;
   margin: auto;
 }
-
+/*
 h1 {
   font-family: 'Bad Script', cursive;
   color: orangered;
@@ -17,4 +17,29 @@ p {
 
 .starterImage{
   width: 16em;
+}
+*/
+
+#header {
+	background-color: #5f9e8f;
+	width: 1115px;
+	height: 35px;
+}
+
+.header_link{
+	float: right; 
+	width: 100px;
+}
+
+.header_icon{
+	float: right; 
+	width: 20px;
+}
+
+#search{
+	border: 1px solid #DDD;
+}
+
+#search_field{
+	border: none;
 }

@@ -1,0 +1,84 @@
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+#columns { 
+	padding-left: 200px; 
+	padding-right: 100px; 
+}
+
+#columns div.left { 
+	float: left; 
+	width: 200px; 
+	margin-left: -250px;  
+}
+
+#columns div.center { 
+	float: left;  
+	width: 500px; 
+	margin-right: -200px; 
+}
+
+#columns div.right { 
+	float: right; 
+	width: 300px; 
+	margin-right: -100px; 
+}
+
+#columns div.clear { 
+	clear: both; 
+}
+
+.thumbnail{
+	max-width: 330px; 
+    max-height: 235px;
+	border:1px solid #6D6E71;
+}
+
+#main_image{
+	border:1px solid #6D6E71;
+}
+
+.color_swatch{
+	width: 30px;
+	height: 20px;
+}
+
+.size_option {
+    width: 40px;
+	height: 25px;
+	border:1px solid #6D6E71;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 25px;       /* the same as your div height */
+}
+
+
