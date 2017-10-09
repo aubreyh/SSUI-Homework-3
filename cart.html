@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Muddy Paws</title>
+
+  <!--The following line loads in your CSS style sheet-->
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/cart.css">
+
+  <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
+  <link href="https://fonts.googleapis.com/css?family=Rubik|Montserrat" rel="stylesheet">
+
+  <!--The following line loads in your JS script-->
+  <!--<script src="js/todo.js"></script>-->
+  <script src="scripts/cart.js"></script>
+</head>
+
+<body>
+
+<div id="header">
+<table id="header_links">
+  <tr>
+  <td><div id="sign_in"><a href="">Sign In</a></div></td>
+	  <td><div id="my_account"><a href="">My Account</a></div></td>
+	  <td><div><img src="./resources/images/icons/chevron_down.png" class="header_icon" alt="chevron"></div></td>
+</tr>
+</table>
+  </div>
+
+  <table id="main_content">
+  <tr> 
+  <td>
+  <p>
+  <a href="index.html">
+<img id="logo" border="0" alt="logo" src="./resources/images/logo.png">
+</a>
+</p>
+
+
+</td>
+<td>
+   <div id="search">
+    <img id="search_icon" src="./resources/images/icons/search_icon.png"/>
+    <input id="search_field" type="text" placeholder="Search">
+</div>
+</td>
+<td><img src="./resources/images/icons/cart.png"><div id="cart_items">3</div></td>
+	  </tr>
+</table>
+
+
+<table id="nav_bar">
+<tr>
+<td><div class="nav_link"><a href="">Camp</a></div></td>
+<td><div class="nav_link"><a href="">Hike</a></div></td>
+<td><div class="nav_link"><a href="">Cycle</a></div></td>
+<td><div class="nav_link"><a href="">Run</a></div></td>
+<td><div class="nav_link"><a href="">Snow</a></div></td>
+<td><div class="nav_link"><a href="">Travel</a></div></td>
+<td><div class="nav_link"><a href="browse.html">Cat</a></div></td>
+<td><div class="nav_link"><a href="">Dog</a></div></td>
+</tr>
+</table>
+
+
+
+<div id="columns">
+<div id="left_column" class="left">
+<h2>MY CART</h2>
+
+<table id="items">
+<tr id="entry_1" class="product_entry">
+	<td>
+		<div class="thumbnail">
+		<table>
+		<tr>
+		<td>
+		<img src="./resources/images/products/product_1_2.png" alt="product image">
+		</td>
+		<td>
+		<table>
+		<tr>
+			<td class="product_title"><h4>CAT HARNESS</h4></td>
+			<td></td>
+			<td><p align="right">$10.99</p></td>
+		</tr>
+			<tr>
+			<td>
+			<p>SIZE: S</p>
+			</td>
+			<td></td>
+			<td></td>
+			</tr>
+			
+			<tr>
+			<td>
+			<p>COLOR: CRAZYBERRY</p>
+			</td>
+			<td>
+			<div class="color_swatch" style="background-color:#92278F"></div>
+			</td>
+			<td></td>
+			</tr>
+			<tr>
+			<td>
+			<p>QTY: 1</p>
+			</td>
+			<td></td>
+			<td></td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			    <td></td>
+			    <td></td>
+				<td><button id="edit_1" value="1" class="edit" type="submit">EDIT</button>
+				<button id="remove_1" value="1" class="remove" type="submit">REMOVE</button>
+				</td>
+				
+			</tr>
+			</table>
+		</td>
+		</tr>
+
+			</table>
+		</div>
+	</td>
+</tr> <!--end product_entry-->
+
+<tr id="entry_2" class="product_entry">
+	<td>
+		<div class="thumbnail">
+		<table>
+		<tr>
+		<td>
+		<img src="./resources/images/products/product_3.png" alt="product image">
+		</td>
+		<td>
+		<table>
+		<tr>
+			<td class="product_title"><h4>WATER STORAGE ATTACHMENT</h4></td>
+			<td></td>
+			<td align="right"><p>$7.99</p></td>
+		</tr>
+			<tr>
+			<td>
+			<p>SIZE: M</p>
+			</td>
+			</tr>
+			
+			<tr>
+			<td>
+			<p>COLOR: STRAWBERRY</p>
+			</td>
+			<td>
+			<div class="color_swatch" style="background-color:#DD1F26"></div>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>QTY: 1</p>
+			</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			    <td></td>
+			    <td></td>
+				<td><button id="edit_2" value="2" class="edit" type="submit">EDIT</button>
+				<button id="remove_2" value="2" class="remove" type="submit">REMOVE</button>
+				</td>
+				
+			</tr>
+			</table>
+		</td>
+		</tr>
+
+			</table>
+		</div>
+	</td>
+</tr> <!--end product_entry-->
+
+<tr id="entry_3" class="product_entry">
+	<td>
+		<div class="thumbnail">
+		<table>
+		<tr>
+		<td>
+		<img src="./resources/images/products/product_4_3.png" alt="product image">
+		</td>
+		<td>
+		<table>
+		<tr>
+			<td class="product_title"><h4>GPS TRACKER COLLAR</h4></td>
+			<td></td>
+			<td align="right"><p>$51.65</p></td>
+		</tr>
+			<tr>
+			<td>
+			<p>SIZE: S</p>
+			</td>
+			</tr>
+			
+			<tr>
+			<td>
+			<p>COLOR: BLACKBERRY</p>
+			</td>
+			<td>
+			<div class="color_swatch" style="background-color:#2D101D"></div>
+			</td>
+			</tr>
+			<tr>
+			<td>
+			<p>QTY: 1</p>
+			</td>
+			</tr>
+			<tr>
+			</tr>
+			<tr>
+			    <td></td>
+			    <td></td>
+				<td><button id="edit_3" value="3" class="edit" type="submit">EDIT</button>
+				<button id="remove_3" value="3" class="remove" type="submit">REMOVE</button>
+				</td>
+				
+			</tr>
+			</table>
+		</td>
+		</tr>
+<tr></tr>
+			</table>
+		</div>
+	</td>
+</tr> <!--end product_entry-->
+
+
+</table>
+
+
+
+</div> <!--end left_column-->
+<div id="right_column" class="center">
+<div id="order_summary">
+<table frame="box">
+<tr>
+	<td align="center"><h2>ORDER SUMMARY</h2></td>
+</tr>
+<tr>
+<td><p>Subtotal</p></td>
+<td><p>$81.62</p></td>
+</tr>
+<tr>
+<td><p>Discount</p></td>
+<td><p align="right">$0.00</p></td>
+</tr>
+<tr>
+<td><p>Shipping</p></td>
+<td><p align="right">$0.00</p></td>
+</tr>
+<tr class="border_bottom">
+<td><h3>Total</h3></td>
+<td><h3>$87.61</h3></td>
+</tr>
+<tr>
+<td><h3>PROMOTION CODE</h3></td>
+<td align="right"><img src="./resources/images/icons/plus.png" alt="Add promotion code"></td>
+</tr>
+<tr></tr>
+<tr></tr>
+</table>
+	</div>
+
+<table>
+<tr>
+<td>
+<div class="checkout_button" id="checkout"><input type="submit" name="" value=""></div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="guest_checkout_button" id="guest_checkout"><input type="submit" name="" value=""></div>
+</td>
+</tr>
+</table>
+
+</div>
+
+</div> <!--end columns-->
+
+
+</body>
+</html>

@@ -1,34 +1,27 @@
 
 body{
-  /*text-align: center;*/
   width: 80%;
   margin: auto;
-}
-/*
-h1 {
-  font-family: 'Bad Script', cursive;
-  color: orangered;
+  font-family: 'Rubrik';
 }
 
-p {
-  text-align: left;
-  font-family: 'Lato', sans-serif;
+a {
+	text-decoration: none; 
+	color: black;
 }
-
-.starterImage{
-  width: 16em;
-}
-*/
 
 #header {
-	background-color: #5f9e8f;
-	width: 1115px;
+	width: 100%;
 	height: 35px;
+    margin: auto;
+	background-color: #5f9e8f;
 }
 
-.header_link{
-	float: right; 
-	width: 100px;
+#header_links{
+	float: right;
+	width: 25%;
+	padding-right: 20px;
+	padding-top: 3px;
 }
 
 .header_icon{
@@ -36,10 +29,43 @@ p {
 	width: 20px;
 }
 
+#main_content{
+	width: 100%;
+	margin: auto;
+}
+
+#logo{
+    width: 300px;
+    height: auto;
+}
+
 #search{
 	border: 1px solid #DDD;
+	background-color: #D4CFCF;
 }
 
 #search_field{
 	border: none;
+	background-color: #D4CFCF;
+}
+
+#nav_bar{
+	width: 80%;
+	align: center;
+	margin: auto;
+	margin-bottom: 15px;
+	table-layout: fixed;
+}
+
+
+
+#photo_container{
+	width: 100%;
+}
+
+p{
+	margin: 0px;
+}
+#cart_items {
+	display: none;
 }

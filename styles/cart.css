@@ -1,0 +1,126 @@
+#columns { 
+}
+
+#columns div.left { 
+	float: left; 
+	width: 700px; 
+}
+
+#columns div.right { 
+	float: left;  
+	width: 300px;  
+}
+
+#columns div.clear { 
+	clear: both; 
+}
+
+.color_swatch{
+	width: 35px;
+	height: 25px;
+}
+
+.size_option {
+    width: 40px;
+	height: 25px;
+	border:1px solid #6D6E71;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 25px;       /* the same as your div height */
+}
+
+.thumbnail{
+	border-bottom: 1px solid #6D6E71;
+	border-bottom: 1px solid #6D6E71;
+}
+
+
+p{
+	margin: 0px;
+	font-size: 14px;
+}
+
+h3{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+h4{
+	margin: 0px;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.product_image {
+    width: 100px;
+    height: auto;
+}
+
+#items{
+	width: 100%;
+}
+
+.edit{
+	border:1px solid #6D6E71;
+	text-align: center; 
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.remove{
+	border:1px solid #6D6E71;
+	text-align: center; 
+	align: right;
+}
+
+div.checkout_button input {
+    background:url("../resources/images/buttons/checkout.png") no-repeat;
+    cursor:pointer;
+    width: 315px;
+    height: 51px;
+    border: none;
+	margin-top: 30px;
+	margin-bottom: 25px;
+}
+
+div.guest_checkout_button input {
+    background:url("../resources/images/buttons/guest_checkout.png") no-repeat;
+    cursor:pointer;
+    width: 315px;
+    height: 51px;
+    border: none;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+
+#order_summary_label{
+	text-align: center;
+}
+
+tr.border_bottom td {
+  border-bottom: 1px solid #6D6E71;
+}
+
+#button_label{
+	align: center;
+}
+
+.product_title{
+	width: 175px;
+}
+
+#cart_items {
+  width: 20px;
+  height: 20px;
+  color:#fff;
+  font-size:80%;
+  background-color:#e74c3c;
+  position:relative;
+  left: 25px;
+  top: -45px;
+  border-radius:1000px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 20px;
+  display: block;
+}

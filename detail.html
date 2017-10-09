@@ -12,43 +12,62 @@
   <link href="https://fonts.googleapis.com/css?family=Rubik|Montserrat" rel="stylesheet">
 
   <!--The following line loads in your JS script-->
-  <script src="js/todo.js"></script>
+  <!--<script src="js/todo.js"></script>-->
+  <script src="scripts/detail.js"></script>
 </head>
 
 <body>
 
-  <table id="header">
+<div id="header">
+<table id="header_links">
   <tr>
-  <td><div id="sign_in" class="header_link"><a href="">Sign In</a></div></td>
-	  <td><div id="my_account" class="header_link"><a href="">My Account</a></div></td>
+  <td><div id="sign_in"><a href="">Sign In</a></div></td>
+	  <td><div id="my_account"><a href="">My Account</a></div></td>
 	  <td><div><img src="./resources/images/icons/chevron_down.png" class="header_icon" alt="chevron"></div></td>
 </tr>
 </table>
+  </div>
 
   <table id="main_content">
   <tr> 
   <td>
- <img src="./resources/images/logo.png" class="logo" alt="chevron">
+  <p>
+  <a href="index.html">
+<img id="logo" border="0" alt="logo" src="./resources/images/logo.png">
+</a>
+</p>
 </td>
 <td>
    <div id="search">
-    <img src="./resources/images/icons/search_icon.png"/>
-    <input id="search_field" type="text" value="Search">
+    <img id="search_icon" src="./resources/images/icons/search_icon.png"/>
+    <input id="search_field" type="text" placeholder="Search">
 </div>
 </td>
-<td><img src="./resources/images/icons/cart.png" class="icon" alt="chevron"></td>
+<td>
+
+  <p>
+  <a href="cart.html">
+<img border="0" alt="cart" src="./resources/images/icons/cart.png">
+
+</a>
+</p>
+<div id="cart_items">0</div>
+</td>
+
+
 	  </tr>
 </table>
 
 
 <table id="nav_bar">
 <tr>
-<td><div class="nav_link"><a href="">Camp & Hike</a></div></td>
+<td><div class="nav_link"><a href="">Camp</a></div></td>
+<td><div class="nav_link"><a href="">Hike</a></div></td>
 <td><div class="nav_link"><a href="">Cycle</a></div></td>
 <td><div class="nav_link"><a href="">Run</a></div></td>
 <td><div class="nav_link"><a href="">Snow</a></div></td>
 <td><div class="nav_link"><a href="">Travel</a></div></td>
-<td><div class="nav_link"><a href="">Cat</a></div></td>
+<td><div class="nav_link"><a href="browse.html">Cat</a></div></td>
 <td><div class="nav_link"><a href="">Dog</a></div></td>
 </tr>
 </table>
@@ -59,86 +78,87 @@
 <ul class="breadcrumb">
   <li><a href="#">Cat</a></li>
   <li><a href="#">Accessories</a></li>
-  <li>WATER STORAGE ATTACHMENT</li>
+  <li id="breadcrumb_product_name">WATER STORAGE ATTACHMENT</li>
 </ul>
 </td>
-<td><img src="./resources/images/icons/left_chevron.png" class="icon" alt="chevron"></td>
+<td id="prev_next"><img src="./resources/images/icons/left_chevron.png" class="icon"></td>
 <td><div class="nav_link"><a href="">Prev</a></div></td>
 <td>|</td>
 <td><div class="nav_link"><a href="">Next</a></div></td>
-<td><img src="./resources/images/icons/right_chevron.png" class="icon" alt="chevron"></td>
+<td><img src="./resources/images/icons/right_chevron.png" class="icon"></td>
 </tr>
 </table>
 
 <div id="columns">
 <div id="left_column" class="left">
-	<div class="thumbnail"><img src="./resources/images/water_attachment_1.png" class="thumbnail" alt="chevron"></div>
-	<div class="thumbnail"><img src="./resources/images/water_attachment_2.png" class="thumbnail" alt="chevron"></div>
-	<div class="thumbnail"><img src="./resources/images/water_attachment_3.png" class="thumbnail" alt="chevron"></div>
+	<div class="thumbnail"><img id="thumb_1" class="thumbnail" src=""></div>
+	<div class="thumbnail"><img id="thumb_2" class="thumbnail" src=""></div>
+	<div class="thumbnail"><img id="thumb_3" class="thumbnail" src=""></div>
 </div>
 <div id="center_column" class="center">
-	<div><img id="main_image" src="./resources/images/water_attachment_1.png" alt="chevron"></div>
+	<img id="main_image" src="">
 </div>
 <div id="right_column" class="right">
 	<h2 id="product_name">WATER STORAGE ATTACHMENT</h2>
 	<h3 id="price">WATER STORAGE ATTACHMENT</h3>
 	
-	<table id="rating">
+	<table>
 <tr>
 	<td><img src="./resources/images/icons/filled_star.png" alt="star"></td>
 	<td><img src="./resources/images/icons/filled_star.png" alt="star"></td>
 	<td><img src="./resources/images/icons/filled_star.png" alt="star"></td>
 	<td><img src="./resources/images/icons/filled_star.png" alt="star"></td>
 	<td><img src="./resources/images/icons/empty_star.png" alt="star"></td>
-    <td><p>4.0</p></td>
-    <td><div class="reviews_link"><a href="">206</a></div></td>
+    <td id="rating">4.0</td>
+    <td><div><a id="reviews_link" href="">206</a></div></td>
 </tr>
 
 </table>
 
-<p>COLOR: STRAWBERRY</p>
+<p id="color_string">COLOR: STRAWBERRY</p>
 
 	<table id="colors">
 <tr>
-	<td><div class="color_swatch" style="background-color:#DD1F26"></div></td>
-	<td><div class="color_swatch" style="background-color:#F15A29"></div></td>
-	<td><div class="color_swatch" style="background-color:#EAC71C"></div></td>
-	<td><div class="color_swatch" style="background-color:#78866B"></div></td>
-	<td><div class="color_swatch" style="background-color:#92278F"></div></td>
-	<td><div class="color_swatch" style="background-color:#2D101D"></div></td>
+	<td><div id="color_1" value="strawberry" class="active_color color_swatch" style="background-color:#DD1F26"></div></td>
+	<td><div id="color_2" value="fire orange" class="color_swatch" style="background-color:#F15A29"></div></td>
+	<td><div id="color_3" value="night moon" class="color_swatch" style="background-color:#EAC71C"></div></td>
+	<td><div id="color_4" value="camouflage" class="color_swatch" style="background-color:#78866B"></div></td>
+	<td><div id="color_5" value="crazyberry" class="color_swatch" style="background-color:#92278F"></div></td>
+	<td><div id="color_6" value="blackberry" class="color_swatch" style="background-color:#2D101D"></div></td>
 </tr>
 </table>
 
-<p>SIZE: S (In Stock)</p>
+<p id="size_string">SIZE: S (In Stock)</p>
 
 	<table id="sizes">
 <tr>
-	<td><div class="size_option">XS</div></td>
-	<td><div class="size_option">S</div></td>
-	<td><div class="size_option">M</div></td>
-	<td><div class="size_option">L</div></td>
+	<td><div id="size_1" value="XS" class="active_size size_option">XS</div></td>
+	<td><div id="size_2" value="S" class="size_option">S</div></td>
+	<td><div id="size_3" value="M" class="size_option">M</div></td>
+	<td><div id="size_4" value="L" class="size_option">L</div></td>
 </tr>
 </table>
 
-	<table id="quantity">
+<table id="quantity">
 <tr>
 	<td><p>SELECT QUANTITY: </p></td>
 	<td><input id="qty" type="number" value="1" min="1" max="5"></td>
 </tr>
 </table>
 
-<button type="submit"><img src="./resources/images/icons/cart.png" alt="chevron"> ADD TO CART</button>
+<div class="add_button" id="add_to_cart"><input type="submit" name="" value=""></div>
+
 
 	<table id="info">
 <tr>
 
-    <td><div class="info_links"><a href="">DESCRIPTION</a></div></td>
-    <td><div class="info_links"><a href="">MORE DETAILS</a></div></td>
+    <td><div><a href="" class="info_links">DESCRIPTION | </a></div></td>
+    <td><div><a href="" class="info_links">MORE DETAILS</a></div></td>
 </tr>
 
 </table>
 
-<p>Portable pet cat water bottle dispenser,</p>
+<p id="product_description">Portable pet cat water bottle dispenser.</p>
 
 </div> <!-- end right_column-->
 </div> <!--end columns-->

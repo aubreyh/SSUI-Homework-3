@@ -6,62 +6,87 @@
 
   <!--The following line loads in your CSS style sheet-->
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/home.css">
 
   <!--The following line loads in 2 fonts from Google Fonts: Bad Script and Lato-->
   <link href="https://fonts.googleapis.com/css?family=Rubik|Montserrat" rel="stylesheet">
 
   <!--The following line loads in your JS script-->
-  <script src="js/todo.js"></script>
+  <script src="scripts/index.js"></script>
 </head>
 
 <body>
 
-  <table id="header">
+<div id="header">
+<table id="header_links">
   <tr>
-  <td><div id="sign_in" class="header_link"><a href="">Sign In</a></div></td>
-	  <td><div id="my_account" class="header_link"><a href="">My Account</a></div></td>
+  <td><div id="sign_in"><a href="">Sign In</a></div></td>
+	  <td><div id="my_account"><a href="">My Account</a></div></td>
 	  <td><div><img src="./resources/images/icons/chevron_down.png" class="header_icon" alt="chevron"></div></td>
 </tr>
 </table>
+  </div>
 
   <table id="main_content">
   <tr> 
   <td>
- <img src="./resources/images/logo.png" class="logo" alt="chevron">
+  <p>
+  <a href="index.html">
+<img id="logo" border="0" alt="logo" src="./resources/images/logo.png">
+</a>
+</p>
 </td>
 <td>
    <div id="search">
-    <img src="./resources/images/icons/search_icon.png"/>
-    <input id="search_field" type="text" value="Search">
+    <img id="search_icon" src="./resources/images/icons/search_icon.png"/>
+    <input id="search_field" type="text" placeholder="Search">
 </div>
 </td>
-<td><img src="./resources/images/icons/cart.png" class="logo" alt="chevron"></td>
+<td>
+  <p>
+  <a href="cart.html">
+<img border="0" alt="cart" src="./resources/images/icons/cart.png">
+<div id="cart_items">0</div></td>
+</a>
+</p>
+</td>
 	  </tr>
 </table>
 
 
 <table id="nav_bar">
 <tr>
-<td><div class="nav_link"><a href="">Camp & Hike</a></div></td>
+<td><div class="nav_link"><a href="">Camp</a></div></td>
+<td><div class="nav_link"><a href="">Hike</a></div></td>
 <td><div class="nav_link"><a href="">Cycle</a></div></td>
 <td><div class="nav_link"><a href="">Run</a></div></td>
 <td><div class="nav_link"><a href="">Snow</a></div></td>
 <td><div class="nav_link"><a href="">Travel</a></div></td>
-<td><div class="nav_link"><a href="">Cat</a></div></td>
+<td><div class="nav_link"><a href="browse.html">Cat</a></div></td>
 <td><div class="nav_link"><a href="">Dog</a></div></td>
 </tr>
 </table>
-  
-  <img src="./resources/images/main_photo_1.png" class="logo" alt="chevron">
 
-  <table style="width:100%">
-  <tr>
-  <td>
-</td>
-<td>
-</td>
-</tr>
-</table>
+<div id="photo_container">
+
+<div class="photos fade">
+  <img src="./resources/images/main_photo_1.png" style="width:100%">
+</div>
+
+<div class="photos fade">
+  <img src="./resources/images/main_photo_2.png" style="width:100%">
+</div>
+
+<div class="photos fade">
+  <img src="./resources/images/main_photo_3.png" style="width:100%">
+</div>
+
+</div>
+<br>
+
+
+
+
 
 
 
